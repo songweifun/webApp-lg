@@ -17,6 +17,65 @@
   margin-right: 0.18666667rem;
   padding-left: 0.26666667rem;
 }
+.foot {
+  border-top: 1px solid #d4d4d4;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+.foot li {
+  font-size: 20px;
+  width: 33%;
+  color: #9f9e9d;
+}
+.foot li.select {
+  background-color: #dbf9f4;
+  color: #01c2a3;
+}
+.foot .ico-document {
+  background-image: url(../image/document.png);
+  width: 25px;
+  height: 21px;
+}
+.foot .ico-search {
+  background-image: url(../image/search.png);
+  width: 24px;
+  height: 24px;
+}
+.foot .ico-my {
+  background-image: url(../image/my.png);
+  width: 23px;
+  height: 25px;
+}
+.position-list {
+  margin: 0;
+  padding: 7px 0;
+}
+.position-list .item {
+  padding: 7px 3px;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+.position-list .item .logo {
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  margin-right: 13px;
+}
+.position-list .item .title {
+  margin: 0;
+}
+.position-list .item .text {
+  margin: 0;
+}
+.bg-w {
+  background: #fff;
+}
 .f-l {
   float: left;
 }
@@ -28,6 +87,36 @@
   display: block;
   clear: both;
 }
+.d-ib {
+  display: inline-block;
+}
+.d-b {
+  display: block;
+}
+.p-a {
+  position: absolute;
+}
+.p-r {
+  position: relative;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+.ta-c {
+  text-align: center;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
 html,
 body {
   width: 100%;
@@ -35,5 +124,6 @@ body {
   margin: 0;
 }
 body {
+  background-color: #eee;
   font-size: 0.42666667rem;
 }
