@@ -17,6 +17,11 @@
   margin-right: 0.18666667rem;
   padding-left: 0.26666667rem;
 }
+.head .back-btn {
+  font-size: 20px;
+  width: 1rem;
+  left: 0;
+}
 .foot {
   border-top: 1px solid #d4d4d4;
   padding: 0;
@@ -73,8 +78,95 @@
 .position-list .item .text {
   margin: 0;
 }
+.bottom-btn {
+  font-family: 'microsoft yahei';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1.2rem;
+  background-color: #12d5b5;
+  text-align: center;
+}
+.position-descr {
+  margin-top: 10px;
+}
+.position-descr h5 {
+  font-size: 0.42666667rem;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+  padding-left: 10px;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.position-descr pre {
+  margin: 12px;
+  display: inline-block;
+}
+.position-info {
+  border-bottom: 1px solid #ccc;
+  padding: 26px 10px 18px 10px;
+}
+.position-info .ml {
+  margin-left: 20px;
+}
+.position-info img {
+  right: 24px;
+  top: 40px;
+}
+.company-info {
+  padding: 20px 15px 10px 85px;
+}
+.company-info img {
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 15px;
+}
+.company-info p {
+  margin-top: 0px;
+}
+.position-class {
+  background-color: #fff;
+  border-top: 1px solid #d4d4d4;
+  padding: 13px 9px 5px 9px;
+}
+.position-class h5 {
+  margin: 0 0 35px 0;
+}
+.position-class button {
+  background-color: #def8f5;
+  border-radius: 20px;
+  padding: 10px 23px;
+  margin-right: 11px;
+}
+.position-class button.active {
+  background-color: #12d5b5;
+  color: #fff;
+}
+.position-class ul {
+  border-top: 1px solid #d4d4d4;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.position-class ul li {
+  font-size: 0.37333333rem;
+  line-height: 0.74666667rem;
+  list-style: none;
+}
+.position-class ul li span {
+  color: red;
+  right: 10px;
+  top: 20px;
+}
 .bg-w {
   background: #fff;
+}
+.c-w {
+  color: #fff;
+}
+.c-r {
+  color: red;
 }
 .f-l {
   float: left;
@@ -92,6 +184,12 @@
 }
 .d-b {
   display: block;
+}
+.p-a {
+  position: absolute;
+}
+.p-r {
+  position: relative;
 }
 .p-a {
   position: absolute;
