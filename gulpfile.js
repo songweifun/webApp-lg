@@ -34,7 +34,7 @@ gulp.task('json', function() {
 
 gulp.task('less', function() {
     gulp.src(app.srcPath + 'style/index.less')//此处采用一个index.less包含其他less的方法引入编译
-        //.pipe($.plumber())
+        .pipe($.plumber())
         .pipe($.less())//编译
         //.pipe($.autoprefixer())
         .pipe(gulp.dest(app.devPath + 'css'))
@@ -45,7 +45,7 @@ gulp.task('less', function() {
 
 gulp.task('js', function() {
     gulp.src(app.srcPath + 'script/**/*.js')
-        //.pipe($.plumber())
+        .pipe($.plumber())
         .pipe($.concat('index.js'))//生成一个index.js文件
         .pipe(gulp.dest(app.devPath + 'js'))
         .pipe($.uglify())//压缩

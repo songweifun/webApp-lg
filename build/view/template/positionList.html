@@ -1,13 +1,13 @@
 <ul class="position-list bg-w">
 
 
-    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data">
+    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data|filterByObj:filterObj">
         <img class="f-l logo" ng-src="{{item.imageUrl}}" alt="">
         <h3 class="title">{{item.job}}</h3>
         <p class="text">
             {{item.companyName}} [{{item.cityName}}] {{item.industryName}}
         </p>
-        <p>{{item.date}}</p>
+        <p class="text">{{item.date}}</p>
         <div class="clear"></div>
     </li>
 

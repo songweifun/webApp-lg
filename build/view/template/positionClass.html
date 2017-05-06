@@ -1,12 +1,13 @@
 <div class="position-class">
     <h5>职位分类</h5>
-    <button class="active">技术</button>
-    <button>运营</button>
-    <ul>
-        <li class="p-r">
-            <p>ISO前端工程师</p>
-            <p>2017-05-03 22:30</p>
-            <span class="p-a">15k-25k</span>
-        </li>
-    </ul>
+    <div >
+        <button ng-class="{active:$first}" ng-repeat="item in com.positionClass">{{item.name}}</button>
+        <ul ng-repeat="item2 in com.positionClass" ng-style="{display:$first?'block':'none'}" class="lists">
+            <li class="p-r" ng-repeat="item3 in item2.positionList">
+                <p>{{item3.name}}</p>
+                <p>{{item3.createdDate}}</p>
+                <span class="p-a">{{item3.salary}}</span>
+            </li>
+        </ul>
+    </div>
 </div>

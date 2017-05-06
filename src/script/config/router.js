@@ -21,5 +21,10 @@ angular.module('app')
                 templateUrl: 'view/company.html',
                 controller: 'companyCtrl'//命名规则名称+Ctrl
             })
+            .state('search', {
+                url: '/search',
+                templateUrl: 'view/search.html',
+                controller: 'searchCtrl'//命名规则名称+Ctrl
+            })
         $urlRouterProvider.otherwise('main');//默认
     }])

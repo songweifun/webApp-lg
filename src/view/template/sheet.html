@@ -1,0 +1,11 @@
+<div class="sheet" ng-show="visible" >
+    <div class="wrap" >
+        <ul>
+            <li class="d-b ta-c" ng-repeat="item in sheetlist" ng-click="changeConf(item)">{{item.name}}</li>
+
+        </ul>
+
+        <button ng-click="visible=false">取消</button>
+    </div>
+
+</div>

@@ -1,10 +1,10 @@
 <div class="bg-w company-info p-r" ui-sref="company({id:1})">
-    <img src="image/company-1.png" alt="" class="p-a">
+    <img ng-src="{{com.imageUrl}}" alt="" class="p-a">
     <p>
-       宝和数据
+       {{com.name}}
 
     </p>
     <p>
-        移动互联网/A轮/100-200人
+        {{com.industry+'/'+com.state+'/'+com.people}}
     </p>
 </div>

@@ -1,0 +1,31 @@
+.search-bar{
+  background-color: @headBgColor;
+  left:0;
+  right:0;
+  top: 0;
+  .h(40);
+  .lh(40);
+  input{
+    border-radius:80px;
+    background-color: @bodyBgColor;
+    border-style: none;
+    outline-width: 0;
+    box-sizing: border-box;
+    .pl(20);
+    .h(25);
+    .w(190);
+  }
+  img{
+    transform: scale(0.6);
+  }
+  button{
+    border: solid 0px;
+    background-color: @headBgColor;
+    &:first-child{
+      color: @defaultColor;
+    }
+    &:last-child{
+      color: @muteColor;
+    }
+  }
+}
